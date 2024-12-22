@@ -27,13 +27,13 @@ class VirusClassifier():
         self.traininputpath = ROOT + 'argumented_feature.npy'
         self.trainoutputpath = ROOT + 'argumented_label.npy'
         
-        self.testinputpath = ROOT + 'test_feature.csv'
-        self.testoutputpath = ROOT + 'test_label.csv'
+        self.testinputpath = ROOT + 'validateinput.csv'
+        self.testoutputpath = ROOT + 'validateoutput.csv'
 
         self.blindinputpath =ROOT + 'blindtestinput.csv'
         self.blindoutputpath =ROOT + 'blindtestoutput.csv'
-        self.realinputpath =ROOT + 'realtestinput.csv'
-        self.realoutputpath =ROOT + 'realtestoutput.csv'
+        self.realinputpath =ROOT + 'blindtestinput.csv'
+        self.realoutputpath =ROOT + 'blindtestoutput.csv'
 
     def get_features(self):
         self.traininput= np.load(self.traininputpath)
